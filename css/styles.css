@@ -75,6 +75,10 @@ body {
     color: #f0a500;
 }
 
+.nav-menu {
+    display:block;
+}
+
 /* Hero Section with Background Image and Gradient */
 .hero {
     height: 100vh;
@@ -306,21 +310,26 @@ body {
     padding:10px 0px 10px 0px;
 }
 
+#buy-mobile {
+    display:none;
+}
+
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
+    
+    .welcome-image {
+        padding-top:100px;
     }
 
-    .navbar ul {
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-        font-size:0.5em;
-        margin-top:10px;
+    .footer-content {
+        margin-bottom:400px;
     }
 
-    .navbar a {
-        padding: 10px;
+    .li-no-mob {
+        display:none;
+    }
+
+    .li-about {
+        display:none;
     }
 
     .gallery img {
@@ -352,5 +361,48 @@ body {
         height: 50px; /* Adjust height for smaller screens */
     }
 
+    .section-divider-2 {
+        height: 50px; /* Adjust height for smaller screens */
+    }
+
+    #buy {
+        display:none;
+    }
+    #buy-mobile {
+        display:block;
+    }
+
+    /* Cog Button Styles */
+    .cog-button {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        position: relative;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .cog-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-image: none;
+        background-size: cover;
+        z-index: 1;
+        transition: transform 0.3s ease;
+    }
+
+    .cog-button:hover::before {
+        transform: unset;
+    }
+    
+    .copyright-footer p {
+        font-size: 0.6em;
+        margin: 0;
+    }
 }
 

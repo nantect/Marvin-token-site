@@ -5,7 +5,7 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
 
         const target = document.querySelector(this.getAttribute('href'));
         window.scrollTo({
-            top: target.offsetTop,
+            top: target.offsetTop - 50,
             behavior: 'smooth'
         });
     });
