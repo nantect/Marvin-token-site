@@ -134,10 +134,22 @@ body {
 }
 
 .welcome-image {
-    margin-top:25px;
+    margin-top:200px;
+    margin-bottom:200px;
     max-width: 100%;
-    height:auto;
     display:block;
+}
+
+@media (max-height: 800px) {
+    .welcome-image {
+        margin-top:600px;
+    }
+    .footer-content {
+        margin-bottom:600px;
+    }
+    #about {
+        padding-top:300px;
+    }
 }
 
 /* Footer Section with Bottom Image Fade In */
@@ -313,6 +325,7 @@ body {
 #buy-mobile {
     display:none;
 }
+
 
 @media (max-width: 768px) {
     
